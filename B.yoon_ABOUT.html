@@ -1,0 +1,134 @@
+<!doctype>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>B.yoon</title>
+
+    <style>
+        body{
+          color:rgba(0, 0, 0, 0.7);
+            /* background-image: url('https://scontent.cdninstagram.com/vp/fb897993ee3f8bcd1e8e2e6baf292dde/5BFA7416/t51.2885-15/sh0.08/e35/s640x640/32762276_174969433202182_5765787934665998336_n.jpg'); */
+            background-color: rgb(200, 150, 150);
+            background-attachment: fixed; /*or scroll*/
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            border-bottom:1px solid rgba(100, 100, 20, 0.7);
+            padding-left:20px;
+            height:400px;
+        }
+
+        header #tab_bar{
+          text-align: center;
+        }
+        header #title{
+          text-align:center;
+          font-style: italic;
+          font-size: 70px;
+          margin-top:85px;
+        }
+        footer{
+            border-top:1px solid none;
+            padding:20px;
+            text-align: left;
+            margin-left: 200px;
+            font-size: 17px;
+        }
+        .content{
+            display:flex;
+        }
+        .content nav{
+            background-color: rgba(250, 200, 200, 0.2);
+            border-right : 1px solid rgba(100, 100, 20, 0.7);
+            border-bottom : 1px solid rgba(100, 100, 20, 0.7);
+        }
+        .content main{
+            background-color: rgba(230, 200, 200, 0.3);
+            border-bottom : 1px solid rgba(100, 100, 20, 0.7);
+        }
+        .content aside{
+            background-color: rgba(250, 200, 200, 0.2);
+            border-left:1px solid rgba(100, 100, 20, 0.7);
+            border-bottom : 1px solid rgba(100, 100, 20, 0.7);
+        }
+
+        @media(Max-width:500px)
+        {
+          .content{
+            flex-direction:column;
+          }
+          .content nav, .content aside{
+              border:none;
+              flex-basis:auot;
+          }
+          main{
+            order:0;
+          }
+          nav{
+            order:1;
+          }
+          aside{
+            order:2;
+            display:none;
+          }
+        }
+        nav, aside{
+            flex-basis: 200px;
+            flex-shrink: 0;
+        }
+        main{
+            padding:10px;
+            margin-right:auto;
+        }
+        main ul{
+          border:1px solid none;
+          border-left:1px solid rgba(100, 100, 20, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+          <div class="tab_bar">
+            <a href="index.html">HOME</a>
+            <a href="B.yoon_ABOUT.html">ABOUT</a>
+            <a href="B.yoon_LIFE.html">LIFE</a>
+            <a href="B.yoon_GAME.html">GAME</a>
+          </div>
+            <h1 id=title>Welcome!<br>It's B.yoon rêve</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li><a href="B.yoon_ABOUT.html">ABOUT</a></li>
+                    <li><a href="B.yoon_LIFE.html">LIFE</a></li>
+                    <li><a href="B.yoon_GAME.html">GAME</a></li>
+                </ul>
+            </nav>
+
+            <main>
+              <ul>
+                <li>2017 서강대학교 컴퓨터공학과 입학</li>
+                <li>2016 이화여자고등학교 졸업</li>
+                <li>2013 동구여자중학교 졸업</li>
+                <li>2010 돈암초등학교 졸업</li>
+                <li>2004 한아름유치원 졸업</li>
+              </ul>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis veniam totam labore ipsum, nesciunt temporibus repudiandae facilis earum, sunt autem illum quam dolore, quae optio nemo vero quidem animi tempore aliquam voluptas assumenda ipsa voluptates. Illum facere dolor eos, corporis nobis, accusamus velit, similique cum iste unde vero harum voluptatem molestias excepturi. Laborum beatae, aliquid aliquam excepturi pariatur soluta asperiores laudantium iste, architecto ducimus fugiat sed, saepe quaerat recusandae exercitationem sapiente, impedit nostrum error. Doloremque impedit, eos in quos assumenda illo eum dicta. Voluptatum quaerat excepturi consectetur, doloremque esse deleniti commodi natus, maxime sit? Officia rerum quibusdam porro dolorum numquam harum soluta ex quo! Vero, nam? Necessitatibus rem hic perferendis maiores obcaecati voluptate sunt autem id doloribus, similique repudiandae nesciunt vel facere ex accusantium ipsum provident iste itaque? Perferendis culpa nostrum repellendus dolores repudiandae assumenda, tempora laudantium in quibusdam placeat facilis ex voluptatem provident velit iusto fuga eum nobis deserunt enim minus. Explicabo vel labore, eum doloremque, impedit recusandae aut illum corporis quis atque sit vero quasi tempore placeat ipsam similique quo delectus provident animi distinctio debitis eligendi voluptatum! Dolorem perspiciatis similique non fugit eaque? Commodi suscipit earum aliquam
+            </main>
+
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            # E-mail : yoonb720@naver.com <br>
+            # Facebook : <a href="http://facebook.com/yoonb720">www.facebook.com/yoonb720</a><br>
+        </footer>
+    </div>
+</body>
+</html>
