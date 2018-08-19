@@ -1,0 +1,216 @@
+<!doctype>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>B.yoon</title>
+
+    <style>
+        body{
+          color:rgba(0, 0, 0, 0.7);
+            /* background-image: url('https://scontent.cdninstagram.com/vp/fb897993ee3f8bcd1e8e2e6baf292dde/5BFA7416/t51.2885-15/sh0.08/e35/s640x640/32762276_174969433202182_5765787934665998336_n.jpg'); */
+            background-color: rgb(200, 150, 150);
+            background-attachment: fixed; /*or scroll*/
+            background-size: cover;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            border-bottom:1px solid rgba(100, 100, 20, 0.7);
+            padding-left:20px;
+            height:400px;
+        }
+
+        header #tab_bar{
+          text-align: center;
+        }
+        header #title{
+          text-align:center;
+          font-style: italic;
+          font-size: 70px;
+          margin-top:85px;
+        }
+        footer{
+            border-top:1px solid none;
+            padding:20px;
+            text-align: left;
+            margin-left: 200px;
+            font-size: 17px;
+        }
+        .content{
+            display:flex;
+        }
+        .content nav{
+            background-color: rgba(250, 200, 200, 0.2);
+            border-right : 1px solid rgba(100, 100, 20, 0.7);
+            border-bottom : 1px solid rgba(100, 100, 20, 0.7);
+        }
+        .content main{
+            background-color: rgba(230, 200, 200, 0.3);
+            border-bottom : 1px solid rgba(100, 100, 20, 0.7);
+        }
+        .content main .board{
+            border:1px solid none);
+        }
+        .content aside{
+            background-color: rgba(250, 200, 200, 0.2);
+            border-left:1px solid rgba(100, 100, 20, 0.7);
+            border-bottom : 1px solid rgba(100, 100, 20, 0.7);
+        }
+
+        @media(Max-width:500px)
+        {
+          .content{
+            flex-direction:column;
+          }
+          .content nav, .content aside{
+              border:none;
+              flex-basis:auot;
+          }
+          main{
+            order:0;
+          }
+          nav{
+            order:1;
+          }
+          aside{
+            order:2;
+            display:none;
+          }
+        }
+        nav, aside{
+            flex-basis: 200px;
+            flex-shrink: 0;
+        }
+        main{
+            padding:10px;
+            margin-right:auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+          <div class="tab_bar">
+            <a href="index.html">HOME</a>
+            <a href="B.yoon_ABOUT.html">ABOUT</a>
+            <a href="B.yoon_LIFE.html">LIFE</a>
+            <a href="B.yoon_GAME.html">GAME</a>
+          </div>
+            <h1 id=title>Welcome!<br>It's B.yoon rêve</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li><a href="B.yoon_ABOUT.html">ABOUT</a></li>
+                    <li><a href="B.yoon_LIFE.html">LIFE</a></li>
+                    <li><a href="B.yoon_GAME.html">GAME</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <CENTER>
+                  <table id="princess" border="0" cellpadding="3" bgcolor=#C89696 width=300 height=420>
+                    <tr height=300>
+                        <td align="center">
+                          <!---- 맨처음 보여줄 이미지 설정  ---->
+                          <img src="0.jpg" name="gallery" width=300 height=400>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                          <form name="menu">
+                            <script>
+                              var x = 0;
+                              var which;
+
+                              function backward()
+                              {
+                                which = document.getElementsByName("gallery");
+
+                                if(x==0)
+                                    x = 8;
+                                else
+                                    x--;
+                                which[0].src = x+".jpg";
+                              }
+
+                              function forward()
+                              {
+                                which = document.getElementsByName("gallery");
+
+                                if(x==8)
+                                    x = 0;
+                                else
+                                    x++;
+                                which[0].src = x+".jpg";
+                              }
+                            </script>
+
+                            <input type="button" value="<" onClick="backward()" />
+                            <input type="button" value="-" onClick="x=1;backward()" />
+                            <input type="button" value=">"  onClick="forward()" />
+                          </form>
+                        </td>
+                    </tr>
+                  </table>
+                </CENTER>
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis veniam totam labore ipsum, nesciunt temporibus repudiandae facilis earum, sunt autem illum quam dolore, quae optio nemo vero quidem animi tempore aliquam voluptas assumenda ipsa voluptates. Illum facere dolor eos, corporis nobis, accusamus velit, similique cum iste unde vero harum voluptatem molestias excepturi. Laborum beatae, aliquid aliquam excepturi pariatur soluta asperiores laudantium iste, architecto ducimus fugiat sed, saepe quaerat recusandae exercitationem sapiente, impedit nostrum error. Doloremque impedit, eos in quos assumenda illo eum dicta. Voluptatum quaerat excepturi consectetur, doloremque esse deleniti commodi natus, maxime sit? Officia rerum quibusdam porro dolorum numquam harum soluta ex quo! Vero, nam? Necessitatibus rem hic perferendis maiores obcaecati voluptate sunt autem id doloribus, similique repudiandae nesciunt vel facere ex accusantium ipsum provident iste itaque? Perferendis culpa nostrum repellendus dolores repudiandae assumenda, tempora laudantium in quibusdam placeat facilis ex voluptatem provident velit iusto fuga eum nobis deserunt enim minus. Explicabo vel labore, eum doloremque, impedit recusandae aut illum corporis quis atque sit vero quasi tempore placeat ipsam similique quo delectus provident animi distinctio debitis eligendi voluptatum! Dolorem perspiciatis similique non fugit eaque? Commodi suscipit earum aliquam rem, neque ad. Obcaecati nisi beatae officia inventore laborum nostrum natus perspiciatis iste, aperiam vero quisquam saepe labore facilis veritatis illo excepturi vitae autem quis! Voluptatibus atque doloribus perferendis, eligendi ex aliquid debitis laudantium omnis accusamus similique cum mollitia quos adipisci reprehenderit assumenda sequi, dolore tenetur ipsam, odio, vero reiciendis iure. Dolore itaque nesciunt ipsam, id maxime saepe officiis dolorum molestias earum temporibus? Possimus ipsum accusamus quasi minima, quod magnam iusto non cupiditate facilis pariatur aliquam omnis, blanditiis assumenda magni ad voluptas dicta est optio reprehenderit rem ratione earum ipsa, dolor vero! Totam, adipisci eos nihil repellendus. Maiores, blanditiis. Officiis aspernatur iure culpa illo sint ex id perferendis, explicabo architecto ipsa voluptatibus nesciunt pariatur commodi cum quam. Obcaecati ut quidem quam error nemo. Pariatur aliquid autem inventore laboriosam, velit totam, temporibus ad magnam minus, quis nesciunt aperiam veritatis. Vitae porro provident magni eos sit sed dignissimos iure natus odio nostrum molestiae atque mollitia saepe adipisci ut velit quo hic fuga ex, voluptates vel eum ipsum amet, sunt corporis. Maxime odit alias, ratione tenetur, asperiores consequuntur deserunt modi velit ab maiores pariatur voluptates beatae aut nesciunt perspiciatis sed veritatis doloremque quibusdam amet vero. Qui, labore.
+                <br>
+                <br>
+
+                <div class="board">
+                    <h2> BOARD </h2>
+                    <?
+                        echo("<a href='board_write.php'>WRITE</a><br>");
+                        echo("<a href='board_read.php'> READ</a>");
+                    ?>
+                    <!-- <?
+                        echo("<h3>WRITE</h3>");
+
+                        $string = $_POST[string];
+                        if(isset($_POST[string]))
+                        {
+                          $filename="Data.txt";
+                          $fp=fopen($filename,"w");
+                          fwrite($fp,$string);
+                          echo("<meta http-equiv='refresh' content='1; URL=board_main.php'>");
+                        }
+
+                        echo("
+                          <form name='inputform' method='post' action='$PHP_SELF'>
+                          <textarea rows=5 cols=50 name = 'string'></textarea><br><br>
+                          <input type='submit' value='SUBMIT'<br>
+                          <input type='reset' value='RESET' <br><br><br>
+                          </form>
+                          ");
+                    ?>
+                    <?
+                    		echo("<h3>READ</h3><br>");
+                    		$filename = "Data.txt";
+                    		$fp = fopen($filename, "r");
+                    		$string = fread($fp, filesize($filename));
+
+                    		echo("
+                    				<form name='outputform'>
+                    				      <textarea name='comment' rows='5' cols='50'> $string </textarea><br>
+                    				</form>
+                    			");
+                        fclose($fp);
+                    ?> -->
+                </div>
+            </main>
+
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            # E-mail : yoonb720@naver.com <br>
+            # Facebook : <a href="http://facebook.com/yoonb720">www.facebook.com/yoonb720</a><br>
+        </footer>
+    </div>
+</body>
+</html>
